@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="Masukkan jumlah hari"
+    />
+    
+ <EditText
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:id="@+id/jumlah_hari"
+ />
+ 
+ <RadioGroup
+ 	android:orientation="vertical"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+ >
+ 	<RadioButton
+	 	android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"
+	    android:text="Avanza"
+	    android:id="@+id/avanza"
+ 	/>
+ 	<RadioButton
+	 	android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"
+	    android:text="AVP"
+	    android:id="@+id/AVP"
+ 	/>
+ 	<RadioButton
+	 	android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"
+	    android:text="Xenia"
+	    android:id="@+id/xenia"
+ 	/>
+ </RadioGroup>
+
+<Spinner
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:id="@+id/spin"
+/>
+
+<Button 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="Total Bayar"
+    android:id="@+id/hitung"
+    android:onClick="hitung"
+/>
+<TextView
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="Hasilnya"
+    android:id="@+id/hasil"
+/>
+
+</LinearLayout>
